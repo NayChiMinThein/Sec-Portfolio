@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.logo{
+  font-family: 'Pacifico', cursive;
+}
+
+.nav-link{
+  border: 2px solid transparent;
+  }
+  
+.nav-link:hover{
+  border-bottom: 2px solid rgb(251 113 133);
+}
+
