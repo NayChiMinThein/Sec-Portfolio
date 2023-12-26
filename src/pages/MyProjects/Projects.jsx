@@ -44,7 +44,9 @@ function Projects() {
             <div key={project.id}>
               <h5 className="text-sm lg:text-base text-center">{project.title}</h5>
               <div className="mt-2 rounded-md bg-rose-100 p-3">
-                <img src={project.img_url} alt={project.title} className="rounded-md"/>
+                <a href={project.demo_url} target="_blank" rel="noreferrer">
+                  <img src={project.img_url} alt={project.title} className="rounded-md"/>
+                </a>
               </div>
               <p className="text-xs lg:text-sm mt-2">
                 {project.text}
