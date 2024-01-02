@@ -1,6 +1,7 @@
 import ecommerce from "../../images/fakestore.png"
 import baydin from "../../images/baydin.png"
 import restuarant from "../../images/restuarant.png"
+import dashboard from "../../images/dashboard.png"
 import { FaGithub } from "react-icons/fa6";
 import { RiShareBoxFill } from "react-icons/ri";
 
@@ -28,10 +29,16 @@ const projects = [
     img_url: restuarant,
     github_url: "https://github.com/NayChiMinThein/Template-Practice-2",
     demo_url: "https://restuarant-website-refby-w3schools.netlify.app/"
+  },
+  {
+    id: 4,
+    title: 'Admin Dashboard',
+    text: "This dashboard blended React with Tailwind CSS for the interface, used Material-UI tables for data display, and Recharts for charts. (Not Responsive)",
+    img_url: dashboard,
+    github_url: "https://github.com/NayChiMinThein/Template-Practice-2",
+    demo_url: "https://ivisadmin-dashboard.vercel.app/"
   }
 ]
-
-
 
 function Projects() {
   return (
