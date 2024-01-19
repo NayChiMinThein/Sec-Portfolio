@@ -3,8 +3,8 @@ import { IoMailOutline } from "react-icons/io5";
 
 function Footer() {
   return (
-    <footer className="text-white text-center mt-16 mb-10 lg:mt-24 lg:mb-12 mx-6" id="contact">
-      <h4 className="text-sm lg:text-base xl:text-lg mb-4 lg:mb-5">
+    <footer className="text-white text-center mt-16 mb-10 md:mt-20 lg:mt-24 lg:mb-12 mx-6" id="contact">
+      <h4 className="text-sm lg:text-base xl:text-lg mb-4 lg:mb-5 font-medium">
         You can contact me from my social media accounts & email.
       </h4>
       <div className="flex items-center justify-center">

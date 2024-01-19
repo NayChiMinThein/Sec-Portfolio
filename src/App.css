@@ -1,5 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 *{
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body{
+  background-color: #2b0945;
+}
+
+/* Scrollbar  */
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: rgb(226 232 240);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(245 158 11);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: rgb(217 119 6);
 }

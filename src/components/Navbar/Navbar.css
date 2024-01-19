@@ -6,9 +6,9 @@
 
 .nav-link{
   border: 2px solid transparent;
-  }
+  padding-bottom: 4px;
+}
   
 .nav-link:hover{
-  border-bottom: 2px solid rgb(251 113 133);
+  border-bottom: 2px solid rgb(245 158 11);
 }
-

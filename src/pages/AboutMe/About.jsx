@@ -1,13 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
-import html from "../../images/html.png"
-import css from "../../images/css.png"
-import bootstrap from "../../images/bootstrap.png"
-import tailwind from "../../images/tailwind.svg"
-import js from "../../images/js.png"
-import react from "../../images/react.png"
-import redux from "../../images/redux.svg"
-import git from "../../images/git.svg"
-import github from "../../images/github.svg"
+import html from "../../images/skills/html.png"
+import css from "../../images/skills/css.png"
+import bootstrap from "../../images/skills/bootstrap.png"
+import tailwind from "../../images/skills/tailwind.svg"
+import js from "../../images/skills/js.png"
+import react from "../../images/skills/react.png"
+import git from "../../images/skills/git.svg"
+import github from "../../images/skills/github.svg"
+import proudCoder from "../../images/proudCoder.svg";
 
 const skills = [
   {
@@ -42,16 +42,11 @@ const skills = [
   },
   {
     id: 7,
-    name: 'redux',
-    img_url: redux
-  },
-  {
-    id: 8,
     name: 'git',
     img_url: git
   },
   {
-    id: 9,
+    id: 8,
     name: 'github',
     img_url: github
   }
@@ -59,29 +54,34 @@ const skills = [
 
 function About() {
   return (
-    <section className="text-white mx-6 md:mx-12 lg:mx-32">
+    <section className="text-white mx-8 pt-8 md:mx-12 md:pt-12 lg:mx-16 xl:mx-32" id="aboutMe">
       <div>
-        <h2 className="text-xl lg:text-3xl text-center mb-8 lg:mb-9 uppercase">
-          About Me
-        </h2>
-        <p className="text-sm lg:text-base font-light tracking-wide leading-6 lg:leading-8">
-          Hi there, my name is Nay Chi Min Thein and I'm a front-end developer based in Myanmar. I have a strong passion for anything web releated, mostly front-end developing and enjoy creating visually appealing and user-friendly websites. I'm dedicated to continuously learning and staying up-to-date with the latest trends and technologies in the field. Looking forward to collaborating on exciting projects in the future.
-        </p>
+        <img src={proudCoder} className="w-40 md:w-44 xl:w-52 mx-auto" />
+        <div>
+          <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center my-8 lg:my-9 xl:my-10 uppercase font-semibold">
+            About <span className="text-amber-500"> Me</span>
+          </h2>
+          <p className="text-sm md:text-base xl:text-xl md:mx-8 leading-6 md:leading-8 xl:leading-10 md:text-center">
+            Hi there, my name is Nay Chi Min Thein and I'm a front-end developer based in Myanmar. I have a strong passion for anything web releated, mostly front-end developing and enjoy creating visually appealing and user-friendly websites. I'm dedicated to continuously learning and staying up-to-date with the latest trends and technologies in the field. Looking forward to collaborating on exciting projects in the future.
+          </p>
+        </div>
       </div>
 
-      <div className="mt-12 md:mt-14 lg:mt-20">
-        <h2 className="text-center tracking-wide text-xl">What Skills I Have</h2>
-        <div className="mt-9 md:mt-12 lg:mt-16 grid grid-cols-3 gap-9 md:gap-12 lg:gap-20">
+      <div>
+        <h2 className="text-center font-medium text-lg lg:text-xl xl:text-2xl my-12 md:my-14 lg:my-16 xl:my-20">
+          What <span className="text-amber-500">Skills</span> I Have
+        </h2>
+        <div className="grid grid-cols-3 gap-9 md:gap-12 lg:gap-20">
           {skills.map(skill => {
             return (
-              <div className="" key={skill.id}>
-                <img src={skill.img_url} alt={skill.name} className="w-10 md:w-12 lg:w-16 block mx-auto" />
+              <div key={skill.id}>
+                <img src={skill.img_url} alt={skill.name} className="w-10 md:w-12 lg:w-16 xl:w-20 block mx-auto" />
               </div>
             )
           })}
         </div>
       </div>
-      <hr className="my-14 md:my-24 lg:my-40" />
+      <hr className="my-16 md:my-28" />
     </section>
   )
 }

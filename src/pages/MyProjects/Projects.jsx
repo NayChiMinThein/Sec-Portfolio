@@ -1,9 +1,9 @@
-import ecommerce from "../../images/fakestore.png"
-import baydin from "../../images/baydin.png"
-import restuarant from "../../images/restuarant.png"
-import dashboard from "../../images/dashboard.png"
-import { FaGithub } from "react-icons/fa6";
-import { RiShareBoxFill } from "react-icons/ri";
+import ecommerce from "../../images/projects/fakestore.png"
+import baydin from "../../images/projects/baydin.png"
+import dashboard from "../../images/projects/dashboard.png"
+import months from "../../images/projects/months.png"
+import randomG from "../../images/projects/randomG.png"
+import recipes from "../../images/projects/recipes.png"
 
 const projects = [
   {
@@ -24,47 +24,65 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Restaurant Website',
-    text: 'Exquisite restaurant website inspired by W3Schools template, elegantly crafted with HTML and CSS mastery.',
-    img_url: restuarant,
-    github_url: "https://github.com/NayChiMinThein/Template-Practice-2",
-    demo_url: "https://restuarant-website-refby-w3schools.netlify.app/"
-  },
-  {
-    id: 4,
     title: 'Admin Dashboard',
     text: "This dashboard blended React with Tailwind CSS for the interface, used Material-UI tables for data display, and Recharts for charts. (Not Responsive)",
     img_url: dashboard,
-    github_url: "https://github.com/NayChiMinThein/Template-Practice-2",
+    github_url: "https://github.com/NayChiMinThein/Admin-Dashboard",
     demo_url: "https://ivisadmin-dashboard.vercel.app/"
-  }
+  },
+  {
+    id: 4,
+    title: 'Myanmar 12 Months',
+    text: "Explore the unique charm of Myanmar each month - flowers, festivities, and history, all in an engaging, easy-to-navigate guide created with React and Tailwind CSS.",
+    img_url: months,
+    github_url: "https://github.com/NayChiMinThein/Myanmar-Months",
+    demo_url: "https://myanmar12months-bync.netlify.app/"
+  },
+  {
+    id: 5,
+    title: 'Burmese Recipes',
+    text: "Delve into Burmese culinary delights with our collection of 60 recipes, featuring detailed preparation steps and ingredients, all beautifully designed with React and Tailwind CSS.",
+    img_url: recipes,
+    github_url: "https://github.com/NayChiMinThein/Burmese-Recipes",
+    demo_url: "https://burmese-recipes-delta.vercel.app/"
+  },
+  {
+    id: 6,
+    title: 'Random Generators',
+    text: "Discover a world of jokes, quotes, and surprises with our sleek and easy-to-use generator, powered by ReactJS and Tailwind CSS.",
+    img_url: randomG,
+    github_url: "https://github.com/NayChiMinThein/Random-Generator",
+    demo_url: "https://random-generator-rho.vercel.app/"
+  },
 ]
 
 function Projects() {
   return (
-    <section className="text-white mx-6 md:mx-12 lg:mx-32 pt-4" id="projects">
-      <h2 className="text-center text-xl lg:text-3xl uppercase mb-10 md:mb-14 lg:mb-16">My Projects</h2>
+    <section className="text-white mx-8 pt-8 md:mx-12 md:pt-12 lg:mx-16 xl:mx-32" id="projects">
+      <h2 className="text-center font-semibold text-xl lg:text-3xl uppercase mb-10 md:mb-14 lg:mb-16">
+        My <span className="text-amber-500"> Projects</span>
+      </h2>
 
-      <div className="grid md:grid-cols-2 gap-6 lg:gap-9">
+      <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-8 lg:gap-10">
         {projects.map(project => {
           return (
-            <div key={project.id}>
-              <h5 className="text-sm lg:text-base text-center">{project.title}</h5>
-              <div className="mt-2 rounded-md bg-rose-100 p-3">
-                <a href={project.demo_url} target="_blank" rel="noreferrer">
-                  <img src={project.img_url} alt={project.title} className="rounded-md"/>
-                </a>
-              </div>
-              <p className="text-xs lg:text-sm mt-2">
-                {project.text}
-              </p>
-              <div className="flex items-center mt-3">
-                <a href={project.github_url} className="md:hover:scale-110" target="_blank" rel="noreferrer">
-                  <FaGithub className="text-lg lg:text-xl xl:text-2xl"/>
-                </a>
-                <a href={project.demo_url} className="ms-3 md:hover:scale-110" target="_blank" rel="noreferrer" title="Live View">
-                  <RiShareBoxFill className="text-xl lg:text-xl xl:text-2xl"/>
-                </a>
+            <div className="text-white bg-purple-950 border border-amber-500 p-4 md:p-5 xl:p-6 rounded-md" key={project.id}>
+              <a href={project.demo_url}>
+                <img className="rounded-md" src={project.img_url} alt={project.title} />
+              </a>
+              <div className="mt-3 lg:mt-4">
+                <h5 className="mb-2 text-lg lg:text-xl xl:text-2xl font-semibold">{project.title}</h5>
+                <p className="text-sm lg:text-base font-medium">{project.text}</p>
+                <div className="mt-4 xl:mt-4 text-sm">
+                  <button className="border border-amber-500 text-amber-500 font-semibold py-1 px-2 rounded-full me-5 
+                  md:hover:bg-amber-500 md:hover:text-black">
+                    <a href={project.github_url} target="_blank" rel="noreferrer">Source Code</a>
+                  </button>
+                  <button className="border border-amber-500 text-amber-500 font-semibold py-1 px-2 rounded-full 
+                  md:hover:bg-amber-500 md:hover:text-black">
+                    <a href={project.demo_url} target="_blank" rel="noreferrer">Live Demo</a>
+                  </button>
+                </div>
               </div>
             </div>
           )
