@@ -61,7 +61,7 @@ function About() {
           <h2 className="text-xl md:text-2xl lg:text-3xl xl:text-4xl text-center my-8 lg:my-9 xl:my-10 uppercase font-semibold">
             About <span className="text-amber-500"> Me</span>
           </h2>
-          <p className="text-sm md:text-base xl:text-xl md:mx-8 leading-6 md:leading-8 xl:leading-10 md:text-center font-medium">
+          <p className="text-base md:text-base xl:text-xl md:mx-8 leading-7 md:leading-8 xl:leading-10 md:text-center font-medium">
             Hi there, my name is Nay Chi Min Thein and I'm a front-end developer based in Myanmar. I have a strong passion for anything web releated, mostly front-end developing and enjoy creating visually appealing and user-friendly websites. I'm dedicated to continuously learning and staying up-to-date with the latest trends and technologies in the field. Looking forward to collaborating on exciting projects in the future.
           </p>
         </div>
